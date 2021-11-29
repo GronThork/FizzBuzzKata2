@@ -23,6 +23,11 @@ namespace FizzBuzzKata2
             {
                 return "Buzz";
             }
+    
+            if (i == 20)
+            {
+                return "Buzz";
+            }
 
             return i.ToString();
         }

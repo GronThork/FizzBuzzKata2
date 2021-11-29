@@ -80,11 +80,11 @@ namespace FizzBuzz.Tests
         }
 
         [Fact]
-        public void ReturnBuzzIfInputIs15()
+        public void ReturnBuzzIfInputIs20()
         {
             var expected = "Buzz";
 
-            var actual = FizzBuzzCalculator.Print(15);
+            var actual = FizzBuzzCalculator.Print(20);
             
             Assert.Equal(expected,actual);
         }
