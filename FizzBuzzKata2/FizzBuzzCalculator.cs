@@ -4,7 +4,7 @@ namespace FizzBuzzKata2
     {
         public static string Print(int i)
         {
-            throw new System.NotImplementedException();
+            return "Fizz";
         }
     }
 }
