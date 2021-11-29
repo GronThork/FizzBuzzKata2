@@ -64,7 +64,7 @@ namespace FizzBuzz.Tests
         {
             var expected = "1";
 
-            var actual = FizzBuzzCalculator.Print(10);
+            var actual = FizzBuzzCalculator.Print(1);
             
             Assert.Equal(expected,actual);
         }

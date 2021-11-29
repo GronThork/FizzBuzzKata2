@@ -13,8 +13,13 @@ namespace FizzBuzzKata2
             {
                 return "Fizz";
             }
-            
-            return "Buzz";
+
+            if (i == 5)
+            {
+                return "Buzz";
+            }
+
+            return i.ToString();
         }
     }
 }
