@@ -32,46 +32,19 @@ namespace FizzBuzz.Tests
             Assert.Equal(expected,actual);
         }
 
-        [Fact]
-        public void ReturnBuzzIfInputIs5()
+        [Theory]
+        [InlineData(30)]
+        [InlineData(60)]
+        [InlineData(90)]
+        public void ReturnFizzBuzzForMultiplesOf3And5(int i)
         {
-            string expected = "Buzz";
+            var expected = "FizzBuzz";
 
-            string actual = FizzBuzzCalculator.Print(5);
+            var actual = FizzBuzzCalculator.Print(i);
             
             Assert.Equal(expected,actual);
         }
-
-        [Fact]
-        public void ReturnFizzBuzzIfInputIs30()
-        {
-            string expected = "FizzBuzz";
-
-            string actual = FizzBuzzCalculator.Print(30);
-            
-            Assert.Equal(expected,actual);
-        }
-
-        [Fact]
-        public void ReturnFizzBuzzIfInputIs60()
-        {
-            string expected = "FizzBuzz";
-
-            string actual = FizzBuzzCalculator.Print(60);
-            
-            Assert.Equal(expected,actual);
-        }
-
-        [Fact]
-        public void ReturnFizzBuzzIfInputIs90()
-        {
-            string expected = "FizzBuzz";
-
-            string actual = FizzBuzzCalculator.Print(90);
-            
-            Assert.Equal(expected,actual);
-        }
-
+        
         [Fact]
         public void ReturnTheInputIfInputIs1()
         {
@@ -81,26 +54,5 @@ namespace FizzBuzz.Tests
             
             Assert.Equal(expected,actual);
         }
-
-        [Fact]
-        public void ReturnBuzzIfInputIs10()
-        {
-            var expected = "Buzz";
-
-            var actual = FizzBuzzCalculator.Print(10);
-            
-            Assert.Equal(expected,actual);
-        }
-
-        [Fact]
-        public void ReturnBuzzIfInputIs20()
-        {
-            var expected = "Buzz";
-
-            var actual = FizzBuzzCalculator.Print(20);
-            
-            Assert.Equal(expected,actual);
-        }
-
     }
 }
