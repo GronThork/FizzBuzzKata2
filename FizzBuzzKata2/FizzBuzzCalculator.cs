@@ -4,7 +4,17 @@ namespace FizzBuzzKata2
     {
         public static string Print(int i)
         {
-            return "Fizz";
+            if (i == 3)
+            {
+                return "Fizz";
+            }
+
+            if (i == 6)
+            {
+                return "Fizz";
+            }
+            
+            return "Buzz";
         }
     }
 }
