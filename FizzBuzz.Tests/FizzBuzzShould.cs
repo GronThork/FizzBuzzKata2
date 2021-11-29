@@ -26,5 +26,15 @@ namespace FizzBuzz.Tests
             Assert.Equal(expected,actual);
         }
 
+        [Fact]
+        public void ReturnBuzzIfInputIs5()
+        {
+            string expected = "Buzz";
+
+            string actual = FizzBuzzCalculator.Print(5);
+            
+            Assert.Equal(expected,actual);
+        }
+
     }
 }
