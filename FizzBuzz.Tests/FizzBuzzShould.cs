@@ -28,13 +28,23 @@ namespace FizzBuzz.Tests
             
             Assert.Equal(expected,actual);
         }
-        
+
         [Fact]
         public void ReturnFizzBuzzIfInputIs30()
         {
             string expected = "FizzBuzz";
 
             string actual = FizzBuzzCalculator.Print(30);
+            
+            Assert.Equal(expected,actual);
+        }
+
+        [Fact]
+        public void ReturnFizzBuzzIfInputIs60()
+        {
+            string expected = "FizzBuzz";
+
+            string actual = FizzBuzzCalculator.Print(60);
             
             Assert.Equal(expected,actual);
         }
