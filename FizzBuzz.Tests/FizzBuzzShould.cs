@@ -6,26 +6,19 @@ namespace FizzBuzz.Tests
 {
     public class FizzBuzzShould
     {
-        [Fact]
-        public void ReturnFizzIfInputIs3()
+        [Theory]
+        [InlineData(3)]
+        [InlineData(6)]
+        [InlineData(9)]
+        public void ReturnFizzForMultipleOf3(int i)
         {
-            string expected = "Fizz";
+            var expected = "Fizz";
 
-            string actual = FizzBuzzCalculator.Print(3);
+            var actual = FizzBuzzCalculator.Print(i);
             
             Assert.Equal(expected,actual);
         }
         
-        [Fact]
-        public void ReturnFizzIfInputIs6()
-        {
-            string expected = "Fizz";
-
-            string actual = FizzBuzzCalculator.Print(6);
-            
-            Assert.Equal(expected,actual);
-        }
-
         [Fact]
         public void ReturnBuzzIfInputIs5()
         {
@@ -35,17 +28,7 @@ namespace FizzBuzz.Tests
             
             Assert.Equal(expected,actual);
         }
-
-        [Fact]
-        public void ReturnFizzIfInputIs9()
-        {
-            string expected = "Fizz";
-
-            string actual = FizzBuzzCalculator.Print(9);
-            
-            Assert.Equal(expected,actual);
-        }
-
+        
         [Fact]
         public void ReturnFizzBuzzIfInputIs30()
         {
