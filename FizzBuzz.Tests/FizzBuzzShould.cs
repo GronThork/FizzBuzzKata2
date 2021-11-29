@@ -79,5 +79,15 @@ namespace FizzBuzz.Tests
             Assert.Equal(expected,actual);
         }
 
+        [Fact]
+        public void ReturnBuzzIfInputIs15()
+        {
+            var expected = "Buzz";
+
+            var actual = FizzBuzzCalculator.Print(15);
+            
+            Assert.Equal(expected,actual);
+        }
+
     }
 }
