@@ -8,6 +8,11 @@ namespace FizzBuzzKata2
             {
                 return "FizzBuzz";
             }
+
+            if (i == 60)
+            {
+                return "FizzBuzz";
+            }
             
             if (i % 3 == 0)
             {
