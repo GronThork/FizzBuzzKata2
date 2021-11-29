@@ -4,17 +4,7 @@ namespace FizzBuzzKata2
     {
         public static string Print(int i)
         {
-            if (i == 30)
-            {
-                return "FizzBuzz";
-            }
-
-            if (i == 60)
-            {
-                return "FizzBuzz";
-            }
-
-            if (i == 90)
+            if (i % 3 == 0 && i % 5 == 0)
             {
                 return "FizzBuzz";
             }
