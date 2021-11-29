@@ -18,7 +18,20 @@ namespace FizzBuzz.Tests
             
             Assert.Equal(expected,actual);
         }
-        
+
+        [Theory]
+        [InlineData(5)]
+        [InlineData(10)]
+        [InlineData(20)]
+        public void ReturnBuzzForMultipleOf5(int i)
+        {
+            var expected = "Buzz";
+
+            var actual = FizzBuzzCalculator.Print(i);
+            
+            Assert.Equal(expected,actual);
+        }
+
         [Fact]
         public void ReturnBuzzIfInputIs5()
         {
