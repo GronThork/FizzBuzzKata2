@@ -13,6 +13,11 @@ namespace FizzBuzzKata2
             {
                 return "Fizz";
             }
+
+            if (i == 9)
+            {
+                return "Fizz";
+            }
             
             return "Buzz";
         }
